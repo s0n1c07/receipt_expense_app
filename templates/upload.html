@@ -1,0 +1,27 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Upload Receipt{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center">
+  <div class="max-w-lg w-full bg-white/20 backdrop-blur-xl rounded-2xl shadow-xl p-10 text-center border border-black/40">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6 drop-shadow-lg">Upload a Receipt</h2>
+    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data" class="space-y-5">
+      <input type="file" name="receipt_image" accept="image/*" required 
+        class="w-full px-4 py-3 border border-gray-400 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+      <button type="submit" class="w-full bg-blue-700 text-white py-3 rounded-lg text-lg font-medium hover:bg-blue-800 transition shadow-md">
+        Upload & Process
+      </button>
+    </form>
+    <div class="mt-8 flex justify-between">
+      <a href="{{ url_for('chat') }}" class="text-blue-300 hover:text-blue-500 font-medium">Go to Chat</a>
+      <a href="{{ url_for('dashboard') }}">
+        <button class="bg-green-600 text-white px-5 py-2 rounded-lg text-lg hover:bg-green-700 transition shadow-md">
+          View Dashboard
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

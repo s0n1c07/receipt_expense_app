@@ -1,0 +1,9 @@
+QTY/ Item Name Price Amount
+4 Cheese Burger 5.99 23.96
+4 Soda 0.49 1.96
+2 Cinnamon Bun 1.00 2.00
+Sales Tax 1.28
+VISA 32.10
+Card Number 9999
+11/01/2019 18:11
+Cashier Thompson
