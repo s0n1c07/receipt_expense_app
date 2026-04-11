@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+ENV/
+.env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Pytest cache
+.pytest_cache/
+
+# SQLite database files
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# Uploaded files
+uploads/
+
+# OCR output
+ocr_output.txt
+
+# Static files (optional, keep images if needed)
+# static/
+
+# Ignore environment variables and secrets
+.env
+.env.*
+
+# Ignore compiled files
+*.so
+*.dll
+*.exe
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.bak
+~*
+
+# Ignore test outputs
+*.out
+
+# Ignore node_modules if any JS tools are used
+node_modules/
